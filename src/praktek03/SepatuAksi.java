@@ -6,6 +6,7 @@ public class SepatuAksi {
         s.setMerk("Grasshopper");
         s.setWarna("Biru");
         s.setHarga(5000);
+        //gak bisa.setJenisBalet();
         
         s.cetakInfo();
         
@@ -15,5 +16,14 @@ public class SepatuAksi {
         System.out.println(s.getWarna());
         System.out.print("Harganya \t: ");
         System.out.println(s.getHarga());
+        
+        SepatuBalet sb = new SepatuBalet();
+        sb.setMerk("Yutaka");
+        sb.setWarna("Silver");
+        sb.setHarga(50000);
+        sb.setJenisBalet("Klasik");
+        sb.cetakInfo();
+        System.out.println("Jenis \t:"+sb.getJenisBalet());
+        sb.throttle();
     }
 }
